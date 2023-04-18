@@ -9,8 +9,8 @@
 How to install:
 
 ```shell
-    export CHART_NAME=coturn
-    export CHART_REPO_NAME=coturn-chart
+    export CHART_NAME=kafka
+    export CHART_REPO_NAME=common-infrastructure-charts
     helm repo add $CHART_REPO_NAME https://iits-consulting.github.io/$CHART_REPO_NAME/
     helm search repo $CHART_NAME
     helm install $CHART_NAME $CHART_REPO_NAME/$CHART_NAME
