@@ -42,6 +42,21 @@ entries:
     version: 0.1.0
   kafka:
   - apiVersion: v2
+    created: "2023-04-20T10:15:54.044997247Z"
+    dependencies:
+    - name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.2.6
+    - name: akhq
+      repository: https://akhq.io/
+      version: 0.2.0
+    description: Kafka
+    digest: 3243b7dffa9fc8d954036561ae0ec2b31daca0e54d2f9293b995f201c98799d4
+    name: kafka
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/kafka-0.1.1/kafka-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     created: "2023-04-18T16:01:50.367248423Z"
     dependencies:
     - name: kafka
@@ -70,4 +85,4 @@ entries:
     urls:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-18T16:01:50.519250286Z"
+generated: "2023-04-20T10:15:54.045038848Z"
