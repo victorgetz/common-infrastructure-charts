@@ -1,0 +1,56 @@
+argo-cd:
+  applicationSet:
+    enabled: "false"
+  controller:
+    env:
+      - name: "TZ"
+        value: "Europe/Berlin"
+      - name: "ARGOCD_GPG_ENABLED"
+        value: "false"
+    logFormat: "json"
+  crds:
+    install: "false"
+  dex:
+    env:
+      - name: "TZ"
+        value: "Europe/Berlin"
+      - name: "ARGOCD_GPG_ENABLED"
+        value: "false"
+    logFormat: "json"
+  notifications:
+    enabled: "false"
+  repoServer:
+    env:
+      - name: "TZ"
+        value: "Europe/Berlin"
+      - name: "ARGOCD_GPG_ENABLED"
+        value: "false"
+    logFormat: "json"
+  server:
+    env:
+      - name: "TZ"
+        value: "Europe/Berlin"
+      - name: "ARGOCD_GPG_ENABLED"
+        value: "false"
+    extraArgs:
+      - "--insecure"
+      - "--rootpath=/argocd"
+      - "--basehref=/argocd"
+    logFormat: json
+global:
+  terraformValues:
+    dnsHost: "SET_BY_TERRAFORM"
+    stage: "SET_BY_TERRAFORM"
+    traefikElbId: "SET_BY_TERRAFORM"
+projects:
+  gitToken:
+    name: "SET_BY_TERRAFORM"
+    password: "SET_BY_TERRAFORM"
+  infrastructure:
+    allowedUrls:
+      - "SET_BY_TERRAFORM"
+    branch: "SET_BY_TERRAFORM"
+    name: "SET_BY_TERRAFORM"
+    path: "SET_BY_TERRAFORM"
+    repoUrl: "SET_BY_TERRAFORM"
+    serverSideApply: "false"
