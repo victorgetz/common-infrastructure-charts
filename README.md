@@ -10,10 +10,9 @@ How to install:
 
 ```shell
     export CHART_NAME=kafka
-    export CHART_REPO_NAME=common-infrastructure-charts
-    helm repo add $CHART_REPO_NAME https://iits-consulting.github.io/$CHART_REPO_NAME/
+    helm repo add victor-common-infrastructure-charts https://victorgetz.github.io/common-infrastructure-charts/
     helm search repo $CHART_NAME
-    helm install $CHART_NAME $CHART_REPO_NAME/$CHART_NAME
+    helm install $CHART_NAME victor-common-infrastructure-charts/$CHART_NAME
 ```
 
 ## acceptance criteria
