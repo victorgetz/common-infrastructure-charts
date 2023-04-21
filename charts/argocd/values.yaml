@@ -44,13 +44,13 @@ global:
     traefikElbId: "SET_BY_TERRAFORM"
 projects:
   gitToken:
-    name: "SET_BY_TERRAFORM"
+    name: "ARGOCD_GIT_ACCESS_TOKEN"
     password: "SET_BY_TERRAFORM"
   infrastructure:
     allowedUrls:
       - "SET_BY_TERRAFORM"
-    branch: "SET_BY_TERRAFORM"
-    name: "SET_BY_TERRAFORM"
-    path: "SET_BY_TERRAFORM"
+    branch: "main"
+    name: "infrastructure-charts"
+    path: "infrastructure-charts"
     repoUrl: "SET_BY_TERRAFORM"
     serverSideApply: "false"
