@@ -35,16 +35,18 @@ argo-cd:
       - "--rootpath=/argocd"
       - "--basehref=/argocd"
     logFormat: json
-terraformValues:
 projects:
-  gitToken:
-    name: "ARGOCD_GIT_ACCESS_TOKEN"
-    password: "SET_BY_TERRAFORM"
-  infrastructure:
-    allowedUrls:
-      - "SET_BY_TERRAFORM"
-    branch: "main"
-    name: "infrastructure-charts"
-    path: "infrastructure-charts"
-    repoUrl: "SET_BY_TERRAFORM"
-    serverSideApply: "false"
+#  infrastructure-charts:
+#    projectValues:
+#      # Set this to enable stage values.yaml
+#      stage:
+#    serverSideApply: "false"
+#    git:
+#      username: "ARGOCD_GIT_ACCESS_TOKEN"
+#      password: "SET_BY_TERRAFORM"
+#      repoUrl: "SET_BY_TERRAFORM"
+#      branch: "main"
+#      path: "infrastructure-charts"
+#      repoPrivateKeyBase64Encoded:
+#    allowedUrls:
+#      - "SET_BY_TERRAFORM"
