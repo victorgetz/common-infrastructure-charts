@@ -36,9 +36,6 @@ argo-cd:
       - "--basehref=/argocd"
     logFormat: json
 terraformValues:
-  dnsHost: "SET_BY_TERRAFORM"
-  stage: "SET_BY_TERRAFORM"
-  traefikElbId: "SET_BY_TERRAFORM"
 projects:
   gitToken:
     name: "ARGOCD_GIT_ACCESS_TOKEN"
