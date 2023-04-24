@@ -47,6 +47,18 @@ entries:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/argocd-5.22.1-terraform-values/argocd-5.22.1-terraform-values.tgz
     version: 5.22.1-terraform-values
   - apiVersion: v2
+    created: "2023-04-24T14:31:57.028289132Z"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 5.22.1
+    description: argo
+    digest: 7d3849bcdc2350587bf2e57b6067d371b0b8230b86192a78da73eea5e04ea3d0
+    name: argocd
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/argocd-5.22.1-projects-structure/argocd-5.22.1-projects-structure.tgz
+    version: 5.22.1-projects-structure
+  - apiVersion: v2
     created: "2023-04-24T11:54:42.403426726Z"
     dependencies:
     - name: argo-cd
@@ -158,4 +170,4 @@ entries:
     urls:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-24T13:44:31.773467376Z"
+generated: "2023-04-24T14:31:57.028329633Z"
