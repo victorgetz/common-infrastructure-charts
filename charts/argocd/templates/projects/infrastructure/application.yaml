@@ -41,6 +41,6 @@ spec:
               {{- tpl (.Values.global | toYaml) . | nindent 14}}
           valueFiles:
             - values.yaml
-            {{- if .Values.global.terraformValues.stage }}
-            - values-{{ .Values.global.terraformValues.stage }}.yaml
+            {{- if .Values.terraformValues.stage }}
+            - values-{{ .Values.terraformValues.stage }}.yaml
             {{- end}}
