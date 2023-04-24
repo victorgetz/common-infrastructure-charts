@@ -37,8 +37,8 @@ spec:
         targetRevision: {{ $project.branch }}
         helm:
           values: |
-            global:
-              {{- tpl (.Values.global | toYaml) . | nindent 14}}
+            terraformValues:
+              {{- tpl (.Values.terraformValues | toYaml) . | nindent 14}}
           valueFiles:
             - values.yaml
             {{- if .Values.terraformValues.stage }}
