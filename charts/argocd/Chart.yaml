@@ -1,7 +1,7 @@
 apiVersion: v2
 description: argo
 name: argocd
-version: 5.22.1-enable-applicationset
+version: 5.22.1-ApplicationSet
 dependencies:
   - name: argo-cd
     repository: https://argoproj.github.io/argo-helm
