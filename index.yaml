@@ -23,6 +23,18 @@ entries:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/argocd-5.22.1/argocd-5.22.1.tgz
     version: 5.22.1
   - apiVersion: v2
+    created: "2023-04-24T13:44:31.773429576Z"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 5.22.1
+    description: argo
+    digest: ee2183c92a4cea16d8b79811c6aca27e4859d0fa6a25b770bcd87c35f31b6074
+    name: argocd
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/argocd-5.22.1-values/argocd-5.22.1-values.tgz
+    version: 5.22.1-values
+  - apiVersion: v2
     created: "2023-04-24T13:09:49.17135379Z"
     dependencies:
     - name: argo-cd
@@ -146,4 +158,4 @@ entries:
     urls:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-24T13:09:49.171544993Z"
+generated: "2023-04-24T13:44:31.773467376Z"
