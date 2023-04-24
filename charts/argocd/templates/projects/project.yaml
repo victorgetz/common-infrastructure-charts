@@ -9,8 +9,12 @@ metadata:
 spec:
   sourceRepos:
     - {{ $project.git.repoUrl }}
-    {{- range $allowedUrl := $project.allowedUrls}}
+    {{- if $project.allowedUrls -}}
+    {{- range $allowedUrl := $project.allowedUrls }}
     - {{ $allowedUrl }}
+    {{- end }}
+    {{ else }}
+    - "*"
     {{- end }}
   destinations:
     - namespace: '*'
@@ -18,4 +22,4 @@ spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
-{{-end}}
+{{- end }}

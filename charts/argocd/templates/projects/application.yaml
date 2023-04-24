@@ -30,18 +30,18 @@ spec:
           {{- end}}
       destination:
         server: https://kubernetes.default.svc
-        namespace: {{ .Release.Namespace }}
+        namespace: {{ $.Release.Namespace }}
       source:
-        path: {{ tpl $project.git.path . }}
+        path: {{ $project.git.path | default $projectName }}
         repoURL: {{ $project.git.repoUrl }}
-        targetRevision: {{ $project.git.branch }}
+        targetRevision: {{ $project.git.branch | default "main" }}
         helm:
           values: |
             terraformValues:
-              {{- tpl ($project.projectValues | toYaml) . | nindent 14}}
+              {{- $project.projectValues | toYaml | nindent 14}}
           valueFiles:
             - values.yaml
             {{- if $project.projectValues.stage }}
             - values-{{ $project.projectValues.stage }}.yaml
             {{- end}}
-{{-end}}
+{{- end }}

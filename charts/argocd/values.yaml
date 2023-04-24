@@ -40,13 +40,17 @@ projects:
 #    projectValues:
 #      # Set this to enable stage values.yaml
 #      stage:
-#    serverSideApply: "false"
+#    # defaults to false
+#    serverSideApply:
 #    git:
-#      username: "ARGOCD_GIT_ACCESS_TOKEN"
+#      # defaults to ARGOCD_GIT_ACCESS_TOKEN
+#      username:
 #      password: "SET_BY_TERRAFORM"
 #      repoUrl: "SET_BY_TERRAFORM"
-#      branch: "main"
-#      path: "infrastructure-charts"
+#      # defaults to main
+#      branch:
+#      # defaults to project name
+#      path:
 #      repoPrivateKeyBase64Encoded:
+#    # defaults to *
 #    allowedUrls:
-#      - "SET_BY_TERRAFORM"
