@@ -4,10 +4,10 @@ metadata:
   name: {{.Release.Name}}
 spec:
   entryPoints:
-    - internalhttps
+    - {{.Values.ingressRoute.entryPointName}}
   routes:
     - kind: Rule
-      match: Host(`{{.Values.dns.host}}`) && PathPrefix(`{{.Values.dns.pathPrefix}}`)
+      match: Host(`{{.Values.ingressRoute.adminDomain}}`) && PathPrefix(`{{.Values.ingressRoute.pathPrefix}}`)
       services:
         - name: argocd-server
           port: 80

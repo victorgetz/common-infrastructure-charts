@@ -36,6 +36,6 @@ traefik:
       enabled: true
     kubernetesIngress:
       enabled: true
-dns:
-  #SET BY ARGOCD STAGE VALUES
-  host:
+
+ingressRoute:
+  adminDomain: "SET BY ARGOCD STAGE VALUES"

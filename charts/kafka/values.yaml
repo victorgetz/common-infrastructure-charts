@@ -1,6 +1,8 @@
-dns:
-  host: "SET BY STAGE VALUES"
-  hostPrefixRegex: "HostRegexp(`{host:admin.+}`)"
+ingressRoute:
+  adminDomain: "SET BY ARGOCD STAGE VALUES"
+  pathPrefix: "/argocd"
+  entryPointName: "internalhttps"
+
 kafka:
   replicaCount: 3
   maxMessageBytes: _52428800

@@ -4,10 +4,10 @@ metadata:
   name: {{.Release.Name}}
 spec:
   entryPoints:
-    - internalhttps
+    - {{.Values.ingressRoute.entryPointName}}
   routes:
     - kind: Rule
-      match: {{.Values.dns.hostPrefixRegex}} && PathPrefix(`/`)
+      match: Host(`{{.Values.ingressRoute.adminDomain}}`) && PathPrefix(`{{.Values.ingressRoute.pathPrefix}}`)
       services:
         - kind: Service
           name: {{ .Release.Name }}

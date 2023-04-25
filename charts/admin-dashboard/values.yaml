@@ -1,6 +1,7 @@
-dns:
-  host: "SET BY STAGE VALUES"
-  hostPrefixRegex: "HostRegexp(`{host:admin.+}`)"
+ingressRoute:
+  adminDomain: "SET BY ARGOCD STAGE VALUES"
+  pathPrefix: "/argocd"
+  entryPointName: "internalhttps"
 nginx:
   replicaCount: 1
   image:
