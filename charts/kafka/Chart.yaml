@@ -5,7 +5,7 @@ dependencies:
   version: 17.2.6
 - name: akhq
   repository: https://akhq.io/
-  version: 0.2.1
+  version: 0.2.2
 description: Kafka
 name: kafka
-version: 0.2.1
+version: 0.2.2

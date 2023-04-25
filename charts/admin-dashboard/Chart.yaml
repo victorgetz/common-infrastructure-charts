@@ -1,4 +1,4 @@
 apiVersion: v2
 description: admin dashboard with urls
 name: admin-dashboard
-version: 0.2.1
+version: 0.2.2
