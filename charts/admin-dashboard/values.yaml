@@ -1,6 +1,6 @@
 ingressRoute:
   adminDomain: "SET BY ARGOCD STAGE VALUES"
-  pathPrefix: "/argocd"
+  pathPrefix: "/"
   entryPointName: "internalhttps"
 nginx:
   replicaCount: 1
