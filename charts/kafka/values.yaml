@@ -1,6 +1,6 @@
 ingressRoute:
   adminDomain: "SET BY ARGOCD STAGE VALUES"
-  pathPrefix: "/argocd"
+  pathPrefix: "/akhq"
   entryPointName: "internalhttps"
 
 kafka:
