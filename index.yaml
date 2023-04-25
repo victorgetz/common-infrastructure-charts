@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   admin-dashboard:
   - apiVersion: v2
+    created: "2023-04-25T16:09:50.840916257Z"
+    description: admin dashboard with urls
+    digest: f59be651fee5c006443b779fd0887334417a156c4ae40ad71c900612bb20f676
+    name: admin-dashboard
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/admin-dashboard-0.2.2/admin-dashboard-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     created: "2023-04-18T16:01:49.647616029Z"
     description: admin dashboard with urls
     digest: 80cd87bacdb45a0964b0c3533f575f58e8ca48b8c579b7ddf7d041b37c453ddd
@@ -108,6 +116,14 @@ entries:
     version: 5.22.1-ApplicationSet
   argocd-config:
   - apiVersion: v2
+    created: "2023-04-25T16:09:51.008804937Z"
+    description: argocd-dns with traefik, external-dns and cert-manager
+    digest: ebf6ad0c2f9df02f0044751c424960913bd35d4982abf426e9178c67b9bb8f7b
+    name: argocd-config
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/argocd-config-0.2.2/argocd-config-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     created: "2023-04-18T16:01:49.822383786Z"
     description: argocd-dns with traefik, external-dns and cert-manager
     digest: f1b72db8bb190c0ad8347bf7ffb4d1126c8b51be90b7c117b13223307819b951
@@ -117,6 +133,14 @@ entries:
     version: 0.1.0
   basic-auth-gateway:
   - apiVersion: v2
+    created: "2023-04-25T16:09:51.189889872Z"
+    description: basic auth gateway chart for traefik
+    digest: 3c5d48fee0e3755d10e7b1fec745898c22ff5cc985a3d595af1ba3ab4c858509
+    name: basic-auth-gateway
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/basic-auth-gateway-0.2.2/basic-auth-gateway-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     created: "2023-04-18T16:01:49.971114107Z"
     description: basic auth gateway chart for traefik
     digest: 84c15a947f30585a12351542b27dc14461f1cf655c3e0ac7ec592527ed2b293b
@@ -125,6 +149,18 @@ entries:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/basic-auth-gateway-0.1.0/basic-auth-gateway-0.1.0.tgz
     version: 0.1.0
   cert-manager:
+  - apiVersion: v2
+    created: "2023-04-25T16:09:51.368429578Z"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.6.1
+    description: Cert Manager
+    digest: c66d3f6e2fb9ece75b075846306d225c3a3afb6a5c0ca3d7a0110fe5fd19d49f
+    name: cert-manager
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/cert-manager-0.2.2/cert-manager-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     created: "2023-04-18T16:01:50.151613938Z"
     dependencies:
@@ -138,6 +174,21 @@ entries:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/cert-manager-0.1.0/cert-manager-0.1.0.tgz
     version: 0.1.0
   kafka:
+  - apiVersion: v2
+    created: "2023-04-25T16:09:51.530317188Z"
+    dependencies:
+    - name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.2.6
+    - name: akhq
+      repository: https://akhq.io/
+      version: 0.2.2
+    description: Kafka
+    digest: 6fc34447d24becaa2f15fefa93304308fae2658f58db313f9a866c6fb90af50c
+    name: kafka
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/kafka-0.2.2/kafka-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     created: "2023-04-20T10:15:54.044997247Z"
     dependencies:
@@ -171,6 +222,19 @@ entries:
   traefik:
   - apiVersion: v2
     appVersion: 9.11.0
+    created: "2023-04-25T16:09:51.684115901Z"
+    dependencies:
+    - name: traefik
+      repository: https://helm.traefik.io/traefik
+      version: 10.22.0
+    description: traefik
+    digest: 65c2d205488bc4e65332d1205d541483cb37806001f1df9ef7f8bb29c6e0dc11
+    name: traefik
+    urls:
+    - https://github.com/victorgetz/common-infrastructure-charts/releases/download/traefik-0.2.2/traefik-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 9.11.0
     created: "2023-04-18T16:01:50.519126685Z"
     dependencies:
     - name: traefik
@@ -182,4 +246,4 @@ entries:
     urls:
     - https://github.com/victorgetz/common-infrastructure-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-24T14:44:14.668464195Z"
+generated: "2023-04-25T16:09:51.684280103Z"
