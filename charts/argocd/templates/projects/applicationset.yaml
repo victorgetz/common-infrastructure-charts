@@ -37,11 +37,11 @@ spec:
         targetRevision: {{ $project.git.branch | default "main" }}
         helm:
           values: |
-            terraformValues:
+            projectValues:
               {{- $project.projectValues | toYaml | nindent 14}}
           valueFiles:
             - values.yaml
-            {{- if $project.projectValues.stage }}
+            {{- if ($project.projectValues).stage }}
             - values-{{ $project.projectValues.stage }}.yaml
             {{- end}}
 {{- end }}
